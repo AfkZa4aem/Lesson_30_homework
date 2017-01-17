@@ -1,6 +1,11 @@
-<h2>Posts:</h2>
+<h2>Latest posts:</h2>
+<br>
 <% @posts.each do |post| %>
 	<p>
 		<%= post.content %>
+		<br>
+		<br>
+		<small style="color: #a6a9ad">Added at: <%= post.created_at %></small>
+		<hr>
 	</p>
 <% end %>
